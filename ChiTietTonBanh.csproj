@@ -89,6 +89,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ABC_bakeryDataSet_chiTietBanHangThuTienMat.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ChiTietBanBanhTrungThuThuTienMat_DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChiTietBanBanhTrungThuThuTienMat_DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DanhMucBanh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -217,6 +222,17 @@
     <None Include="ABC_bakeryDataSet_chiTietBanHangThuTienMat.xss">
       <DependentUpon>ABC_bakeryDataSet_chiTietBanHangThuTienMat.xsd</DependentUpon>
     </None>
+    <None Include="ChiTietBanBanhTrungThuThuTienMat_DataSet.xsc">
+      <DependentUpon>ChiTietBanBanhTrungThuThuTienMat_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ChiTietBanBanhTrungThuThuTienMat_DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ChiTietBanBanhTrungThuThuTienMat_DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ChiTietBanBanhTrungThuThuTienMat_DataSet.xss">
+      <DependentUpon>ChiTietBanBanhTrungThuThuTienMat_DataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -244,6 +260,7 @@
     <None Include="Resources\rightArrow.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\pngtree-mid-autumn-festival-retro-hand-drawn-moon-cake-osmanthus-free-elements-png-image_2589111.jpg" />
     <Content Include="Resources\refresh-icon-png-8.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

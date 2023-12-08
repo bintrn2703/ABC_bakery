@@ -19,8 +19,8 @@ namespace ChiTietTonBanh
             ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormChiTietBanHangThuTienMat());
-       
+            //Application.Run(new FormChiTietBanHangThuTienMat());
+            Application.Run(new FormChiTietTonBanhTrungThuThuTienMat());
         }
     }
 }

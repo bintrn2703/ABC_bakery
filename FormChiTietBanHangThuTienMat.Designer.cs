@@ -59,6 +59,7 @@ namespace ChiTietTonBanh
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.SaddleBrown;
             this.label1.Location = new System.Drawing.Point(278, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(447, 29);
@@ -75,6 +76,7 @@ namespace ChiTietTonBanh
             // 
             // search_btn
             // 
+            this.search_btn.ForeColor = System.Drawing.Color.Black;
             this.search_btn.Location = new System.Drawing.Point(195, 40);
             this.search_btn.Name = "search_btn";
             this.search_btn.Size = new System.Drawing.Size(75, 23);
@@ -84,9 +86,10 @@ namespace ChiTietTonBanh
             // 
             // print_btn
             // 
-            this.print_btn.Location = new System.Drawing.Point(726, 40);
+            this.print_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("print_btn.BackgroundImage")));
+            this.print_btn.Location = new System.Drawing.Point(713, 41);
             this.print_btn.Name = "print_btn";
-            this.print_btn.Size = new System.Drawing.Size(112, 23);
+            this.print_btn.Size = new System.Drawing.Size(125, 23);
             this.print_btn.TabIndex = 3;
             this.print_btn.Text = "In Danh Sách";
             this.print_btn.UseVisualStyleBackColor = true;
@@ -194,6 +197,7 @@ namespace ChiTietTonBanh
             // 
             this.total_lb.AutoSize = true;
             this.total_lb.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.total_lb.ForeColor = System.Drawing.Color.SaddleBrown;
             this.total_lb.Location = new System.Drawing.Point(679, 620);
             this.total_lb.Name = "total_lb";
             this.total_lb.Size = new System.Drawing.Size(82, 17);
