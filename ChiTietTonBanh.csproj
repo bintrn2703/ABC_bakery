@@ -89,6 +89,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ABC_bakeryDataSet_chiTietBanHangThuTienMat.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ChiTietBanBanhNoelThuTienMat_DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChiTietBanBanhNoelThuTienMat_DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ChiTietBanBanhTrungThuThuTienMat_DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -116,6 +121,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DanhMucKhachHang_DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormChiTietBanBanhNoelThuTienMat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChiTietBanBanhNoelThuTienMat.Designer.cs">
+      <DependentUpon>FormChiTietBanBanhNoelThuTienMat.cs</DependentUpon>
     </Compile>
     <Compile Include="FormChiTietBanHangThuTienMat.cs">
       <SubType>Form</SubType>
@@ -163,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DanhMucKhachHang.resx">
       <DependentUpon>DanhMucKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChiTietBanBanhNoelThuTienMat.resx">
+      <DependentUpon>FormChiTietBanBanhNoelThuTienMat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormChiTietBanHangThuTienMat.resx">
       <DependentUpon>FormChiTietBanHangThuTienMat.cs</DependentUpon>
@@ -235,6 +249,17 @@
     </None>
     <None Include="ABC_bakeryDataSet_chiTietBanHangThuTienMat.xss">
       <DependentUpon>ABC_bakeryDataSet_chiTietBanHangThuTienMat.xsd</DependentUpon>
+    </None>
+    <None Include="ChiTietBanBanhNoelThuTienMat_DataSet.xsc">
+      <DependentUpon>ChiTietBanBanhNoelThuTienMat_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ChiTietBanBanhNoelThuTienMat_DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ChiTietBanBanhNoelThuTienMat_DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ChiTietBanBanhNoelThuTienMat_DataSet.xss">
+      <DependentUpon>ChiTietBanBanhNoelThuTienMat_DataSet.xsd</DependentUpon>
     </None>
     <None Include="ChiTietBanBanhTrungThuThuTienMat_DataSet.xsc">
       <DependentUpon>ChiTietBanBanhTrungThuThuTienMat_DataSet.xsd</DependentUpon>
