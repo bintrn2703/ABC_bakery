@@ -20,7 +20,8 @@ namespace ChiTietTonBanh
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new FormChiTietBanHangThuTienMat());
-            Application.Run(new FormChiTietTonBanhTrungThuThuTienMat());
+            //Application.Run(new FormChiTietTonBanhTrungThuThuTienMat());
+            Application.Run(new DanhMucKhachHang());
         }
     }
 }

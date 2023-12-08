@@ -106,6 +106,17 @@
     <Compile Include="ChiTietTonBanh.Designer.cs">
       <DependentUpon>ChiTietTonBanh.cs</DependentUpon>
     </Compile>
+    <Compile Include="DanhMucKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMucKhachHang.Designer.cs">
+      <DependentUpon>DanhMucKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMucKhachHang_DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DanhMucKhachHang_DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FormChiTietBanHangThuTienMat.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChiTietTonBanh.resx">
       <DependentUpon>ChiTietTonBanh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMucKhachHang.resx">
+      <DependentUpon>DanhMucKhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormChiTietBanHangThuTienMat.resx">
       <DependentUpon>FormChiTietBanHangThuTienMat.cs</DependentUpon>
@@ -232,6 +246,17 @@
     </None>
     <None Include="ChiTietBanBanhTrungThuThuTienMat_DataSet.xss">
       <DependentUpon>ChiTietBanBanhTrungThuThuTienMat_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DanhMucKhachHang_DataSet.xsc">
+      <DependentUpon>DanhMucKhachHang_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DanhMucKhachHang_DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DanhMucKhachHang_DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DanhMucKhachHang_DataSet.xss">
+      <DependentUpon>DanhMucKhachHang_DataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
