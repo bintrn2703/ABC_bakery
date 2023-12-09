@@ -22,21 +22,23 @@ namespace ChiTietTonBanh
 
         private void DanhMucKhachHang_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'danhMucKhachHang_DataSet2.SelectDanhMucKhachHang' table. You can move, or remove it, as needed.
+            this.selectDanhMucKhachHangTableAdapter1.Fill(this.danhMucKhachHang_DataSet2.SelectDanhMucKhachHang);
             // TODO: This line of code loads data into the 'danhMucKhachHang_DataSet.SelectDanhMucKhachHang' table. You can move, or remove it, as needed.
-            this.selectDanhMucKhachHangTableAdapter.Fill(this.danhMucKhachHang_DataSet.SelectDanhMucKhachHang);
+            // this.selectDanhMucKhachHangTableAdapter.Fill(this.danhMucKhachHang_DataSet.SelectDanhMucKhachHang);
 
         }
 
         private void pd_PrintPage(object sender, PrintPageEventArgs e)
         {
             // Tạo một đối tượng Bitmap mới với kích thước của DataGridView.
-            Bitmap bitmap = new Bitmap(DanhMucKhachHang_dataGridView.Width, DanhMucKhachHang_dataGridView.Height);
+            Bitmap bitmap = new Bitmap(DanhMucKhachHang_dataGridView2.Width, DanhMucKhachHang_dataGridView2.Height);
 
             // Tạo một đối tượng Rectangle mới với kích thước của DataGridView.
-            Rectangle rectangle = new Rectangle(0, 0, DanhMucKhachHang_dataGridView.Width, DanhMucKhachHang_dataGridView.Height);
+            Rectangle rectangle = new Rectangle(0, 0, DanhMucKhachHang_dataGridView2.Width, DanhMucKhachHang_dataGridView2.Height);
 
             // Gọi phương thức DrawToBitmap với các tham số phù hợp.
-            DanhMucKhachHang_dataGridView.DrawToBitmap(bitmap, rectangle);
+            DanhMucKhachHang_dataGridView2.DrawToBitmap(bitmap, rectangle);
 
             // Vẽ Bitmap lên đối tượng Graphics của sự kiện PrintPage.
             e.Graphics.DrawImage(bitmap, new Point(0, 0));
@@ -63,8 +65,8 @@ namespace ChiTietTonBanh
 
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
-                ExcelExporter.ExportToExcel(DanhMucKhachHang_dataGridView, saveFileDialog.FileName);
-                ExcelExporter.ExportToExcel(DanhMucKhachHang_dataGridView, saveFileDialog.FileName);
+                ExcelExporter.ExportToExcel(DanhMucKhachHang_dataGridView2, saveFileDialog.FileName);
+                ExcelExporter.ExportToExcel(DanhMucKhachHang_dataGridView2, saveFileDialog.FileName);
             }
         }
 
@@ -74,12 +76,12 @@ namespace ChiTietTonBanh
             DataTable dt = new DataTable();
 
             // Thêm các cột/dòng tương ứng với các cột trong DataGridView
-            foreach (DataGridViewColumn column in DanhMucKhachHang_dataGridView.Columns)
+            foreach (DataGridViewColumn column in DanhMucKhachHang_dataGridView2.Columns)
             {
                 dt.Columns.Add(column.Name, typeof(string));
             }
 
-            foreach (DataGridViewRow row in DanhMucKhachHang_dataGridView.Rows)
+            foreach (DataGridViewRow row in DanhMucKhachHang_dataGridView2.Rows)
             {
                 DataRow dr = dt.NewRow();
 

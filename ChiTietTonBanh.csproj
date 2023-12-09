@@ -122,6 +122,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DanhMucKhachHang_DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DanhMucKhachHang_DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DanhMucKhachHang_DataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FormChiTietBanBanhNoelThuTienMat.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -282,6 +287,17 @@
     </None>
     <None Include="DanhMucKhachHang_DataSet.xss">
       <DependentUpon>DanhMucKhachHang_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DanhMucKhachHang_DataSet2.xsc">
+      <DependentUpon>DanhMucKhachHang_DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DanhMucKhachHang_DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DanhMucKhachHang_DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DanhMucKhachHang_DataSet2.xss">
+      <DependentUpon>DanhMucKhachHang_DataSet2.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

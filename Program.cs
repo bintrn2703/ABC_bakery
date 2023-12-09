@@ -21,8 +21,8 @@ namespace ChiTietTonBanh
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new FormChiTietBanHangThuTienMat());
             //Application.Run(new FormChiTietTonBanhTrungThuThuTienMat());
-            //Application.Run(new DanhMucKhachHang());
-            Application.Run(new FormChiTietBanBanhNoelThuTienMat());
+            Application.Run(new DanhMucKhachHang());
+            //Application.Run(new FormChiTietBanBanhNoelThuTienMat());
         }
     }
 }
