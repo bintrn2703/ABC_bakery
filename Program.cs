@@ -19,10 +19,12 @@ namespace ChiTietTonBanh
             ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            //Application.Run(new ChiTietTonBanh());
             //Application.Run(new FormChiTietBanHangThuTienMat());
             //Application.Run(new FormChiTietTonBanhTrungThuThuTienMat());
-            Application.Run(new DanhMucKhachHang());
+            //Application.Run(new DanhMucKhachHang());
             //Application.Run(new FormChiTietBanBanhNoelThuTienMat());
+            Application.Run(new form_danhMucBanh());
         }
     }
 }

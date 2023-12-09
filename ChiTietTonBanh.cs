@@ -59,18 +59,31 @@ namespace ChiTietTonBanh
             // this.dataGridView1.DrawToBitmap(e.Graphics);
 
             // Tạo một đối tượng Bitmap mới với kích thước của DataGridView.
-            Bitmap bitmap = new Bitmap(dataGridView1.Width, dataGridView1.Height);
+            Bitmap bitmap = new Bitmap(ChiTietTonBanh_dataGridView.Width, ChiTietTonBanh_dataGridView.Height);
 
             // Tạo một đối tượng Rectangle mới với kích thước của DataGridView.
-            Rectangle rectangle = new Rectangle(0, 0, dataGridView1.Width, dataGridView1.Height);
+            Rectangle rectangle = new Rectangle(0, 0, ChiTietTonBanh_dataGridView.Width, ChiTietTonBanh_dataGridView.Height);
 
             // Gọi phương thức DrawToBitmap với các tham số phù hợp.
-            dataGridView1.DrawToBitmap(bitmap, rectangle);
+            ChiTietTonBanh_dataGridView.DrawToBitmap(bitmap, rectangle);
         }
 
         private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void exportExcelBtn_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "Excel files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
+            saveFileDialog.Title = "Export to Excel";
+            saveFileDialog.FileName = "ExportedData.xlsx";
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                ExcelExporter.ExportToExcel(ChiTietTonBanh_dataGridView, saveFileDialog.FileName);
+            }
         }
     }
 }
